@@ -1,12 +1,14 @@
-.left {
+.leftcolumn {
     float: left;
-	height:100%;
+	height:auto;
     width: 68vw;
 }
-.right{
+.rightcolumn{
+	margin-top: 2px;
 	float: left;
-	height:100%;
-	width: 30vw;
+	height:auto;
+	width: 28vw;
+	border-style: solid; 
 }
 
 .switchteam{
@@ -34,7 +36,7 @@ body{
 nav a{
 	display:inline-block;
 	text-decoration: none;
-	background-color: #123;
+	background-color: #0d1a5f;
 	width: 100%;
 	height: 100%;
 	text-align: center;
@@ -66,8 +68,15 @@ nav{
 	background-color: rgba(0, 0, 50, 1);
 }
 
-footer
-{
+.ironnavbackground{
+	background-color: #DA1F28;
+}
+
+.ironnavbuttons{
+	background-color: #540c10;
+}
+
+footer{
 	position: fixed;
     left: 0;
     bottom: 0;
@@ -90,4 +99,89 @@ footer
 
 .dropdown:hover .dropdown-content{
 	display: inline-block;
+}
+
+.center{
+	text-align: center;
+}
+
+.profilepic{
+	width: 27vw;
+	height: 65vh;
+	padding: 0px 0.5vw;
+}
+
+.righthand{
+	text-align: right;
+	padding-right: 5px;
+}
+
+.capcolor{
+	background-color: #070e32;
+}
+
+.ironcolor{
+	background-color: #760C10
+}
+
+th, td{
+	border: 2px solid black;
+	text-align: center;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+.marginleft{
+	margin-left: 4px;
+}
+
+.whitecolor{
+	color: hsla(0, 0%, 88%, 1);
+}
+
+div h4{
+	margin:0;
+}
+
+div p{
+	margin: 4px;
+}
+
+.textpic{
+	width: 480px;
+	height: 240px;
+}
+
+.spoilerbutton{
+	display:block;margin:5px 0;
+}
+
+.spoiler{
+	overflow:hidden;
+}
+
+.spoiler > div{
+	-webkit-transition: all 0.2s ease;-moz-transition: margin 0.2s ease;-o-transition: all 0.2s ease;transition: margin 0.2s ease;
+}
+
+.spoilerbutton[value="Show"] + .spoiler > div{
+	margin-top:-100%;
+}
+
+.spoilerbutton[value="Hide"] + .spoiler{
+	padding:5px;
+}
+
+.bottommargin{
+	height: 200px;
+}
+
+.smallerfont{
+	font-size: 1.25rem;
+}
+
+.smallestfont{
+	font-size: 1rem;
 }
