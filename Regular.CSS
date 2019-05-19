@@ -1,4 +1,4 @@
-.leftcolumn {
+.leftcolumn { /*Skapa kolumner*/
     float: left;
 	height:auto;
     width: 68vw;
@@ -9,11 +9,6 @@
 	height:auto;
 	width: 28vw;
 	border-style: solid; 
-}
-
-.switchteam{
-	right: 0;
-	position: absolute;
 }
 
 .clearfix::after{
@@ -32,7 +27,7 @@ body{
     height: 100%;
     margin: 0px;
 }
-
+/*För navmenyn, 6 under + 3 till för dropdown*/
 nav a{
 	display:inline-block;
 	text-decoration: none;
@@ -68,23 +63,12 @@ nav{
 	background-color: rgba(0, 0, 50, 1);
 }
 
-.ironnavbackground{
-	background-color: #DA1F28;
+.switchteam{ /*Skapad för positionen av "Switch team knappen"*/
+	right: 0;
+	position: absolute;
 }
 
-.ironnavbuttons{
-	background-color: #540c10;
-}
-
-footer{
-	position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-	background-color:rgba(11, 20, 10, 1);
-	height:10vh;
-}
-
+/*Dropdown klasser*/
 .dropdown{
 	display: block;
 	position: relative;
@@ -101,21 +85,25 @@ footer{
 	display: inline-block;
 }
 
-.center{
+footer{
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	background-color:rgba(11, 20, 10, 1);
+	height:10vh;
+}
+
+.center{ /*Centrerar den texten jag sätter klassen på*/
 	text-align: center;
 }
 
-.profilepic{
-	width: 27vw;
-	height: 65vh;
-	padding: 0px 0.5vw;
-}
-
-.righthand{
+.righthand{/*Används för att informationen i profilboxen ska vara på vänstra sidan.*/
 	text-align: right;
 	padding-right: 5px;
 }
 
+/*Färger för olika delar av sidan*/
 .capcolor{
 	background-color: #070e32;
 }
@@ -124,7 +112,15 @@ footer{
 	background-color: #760C10
 }
 
-th, td{
+.ironnavbackground{
+	background-color: #DA1F28;
+}
+
+.ironnavbuttons{
+	background-color: #540c10;
+}
+
+th, td{ /*För tabellen*/
 	border: 2px solid black;
 	text-align: center;
 }
@@ -133,14 +129,19 @@ table{
 	border-collapse: collapse;
 }
 
-.marginleft{
+tr:nth-child(even) {
+	background-color: hsla(255, 40%, 33%, 0.467);
+}
+
+.marginleft{ /*Används för att skapa utrymme mellan kanten och elementet*/
 	margin-left: 4px;
 }
 
-.whitecolor{
+.whitecolor{ /*Används där jag vill ha (nästan) vit färg*/
 	color: hsla(0, 0%, 88%, 1);
 }
 
+/*Gjort för att texten i profilboxen ska vara närmare*/
 div h4{
 	margin:0;
 }
@@ -149,11 +150,25 @@ div p{
 	margin: 4px;
 }
 
+/*För att bilderna ska vara inställda rätt*/
+.profilepic{ 
+	width: 27vw;
+	height: 65vh;
+	padding: 0px 0.5vw;
+}
+
+@media only screen and (max-height: 680px) {
+	.profilepic {
+	  height: 480px;
+	}
+}
+
 .textpic{
 	width: 480px;
 	height: 240px;
 }
 
+/*Fem under gjorda för att skapa spoilerknappar som ska visa status på hjältarna. Använder bland annat attributselektorn*/
 .spoilerbutton{
 	display:block;margin:5px 0;
 }
@@ -174,10 +189,11 @@ div p{
 	padding:5px;
 }
 
-.bottommargin{
+.bottommargin{ /*Gjord för att all information ska synas även om det inte är så mycket.*/
 	height: 200px;
 }
 
+/*Klasser gjorda för att de längre namnen ska få plats i navmenyerna*/
 .smallerfont{
 	font-size: 1.25rem;
 }

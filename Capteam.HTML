@@ -8,47 +8,51 @@
         <title>Capteam</title>
     </head>
     <body>
-        <nav>
-            <ul>
-                <li>
-                    <a href="Capteam.HTML">Team</a>
-                </li>
-                <li class="dropdown">
-                    <a href="#">List</a>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li>
-                                <a class="smallestfont" href="CaptainAmerica.HTML">Captain America</a>
-                            </li>
-                            <li>
-                                <a href="Hawkeye.HTML">Hawkeye</a>
-                            </li>
-                            <li>
-                                <a href="Falcon.HTML">Falcon</a>
-                            </li>
-                            <li>
-                                <a class="smallerfont" href="ScarletWitch.HTML">Scarlet Witch</a>
-                            </li>
-                            <li>
-                                <a class="smallerfont" href="WinterSoldier.HTML">Winter Soldier</a>
-                            </li>
-                            <li>
-                                <a href="Ant-Man.HTML">Ant-Man</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="switchteam">
-                    <a href="Ironteam.HTML">Switch team</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="leftcolumn">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="Capteam.HTML">Team</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">List</a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li>
+                                    <a class="smallestfont" href="CaptainAmerica.HTML">Captain America</a>
+                                </li>
+                                <li>
+                                    <a href="Hawkeye.HTML">Hawkeye</a>
+                                </li>
+                                <li>
+                                    <a href="Falcon.HTML">Falcon</a>
+                                </li>
+                                <li>
+                                    <a class="smallerfont" href="ScarletWitch.HTML">Scarlet Witch</a>
+                                </li>
+                                <li>
+                                    <a class="smallerfont" href="WinterSoldier.HTML">Winter Soldier</a>
+                                </li>
+                                <li>
+                                    <a href="Ant-Man.HTML">Ant-Man</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="switchteam">
+                        <a href="Ironteam.HTML">Switch team</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div role="main" class="leftcolumn">
             <h1 class="marginleft">Captain America's Team</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JF7nHPTWqIQ?start=158" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p class="marginleft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatem vitae eveniet quasi reiciendis quod natus laudantium modi iure laborum vel, voluptatibus dignissimos ipsam aut laboriosam rem facere magni quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum vero ipsa illo, ut delectus nemo molestiae sapiente dolores amet ullam magni qui quod odit similique molestias deserunt. Libero, est?</p>
             <p class="marginleft">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta laboriosam quae deserunt vel exercitationem. Asperiores velit nulla ex laborum exercitationem odio? Alias hic sint laudantium neque cum explicabo tempore dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deserunt? Quod voluptates suscipit repellat ipsa dolores odit accusamus similique saepe inventore cumque recusandae optio, quasi quisquam? Laborum unde quod expedita.</p>
             <br>
-            <img class="textpic" alt="Captain America Team running" src="Cap-team.jpg">
+            <img class="textpic" alt="Captain America's Team running" src="Cap-team.jpg">
             <table class="marginleft">
                 <thead>
                     <tr>
@@ -106,9 +110,65 @@
                 <li>Hawkeye</li>
                 <li>Falcon</li>
             </ol>
+            <form id="Capform" autocomplete="on">
+                <fieldset>
+                    <legend>
+                        Favorite Superheroes
+                    </legend>
+                        <h3>First Name</h3>
+                        <input type="text" name="fName" maxlength="24" pattern="[A-Za-z]{0,}" autofocus required>
+                        <h3>Last Name</h3>
+                        <input type="text" name="lName" maxlength="24" pattern="[A-Za-z]{0,}">
+                        <h3>Favorite on the team</h3>
+                        <label for="hero">Captain America</label>
+                        <input type="radio" name="hero" value="Captain America">
+                        <label for="hero">Hawkeye</label>
+                        <input type="radio" name="hero" value="Hawkeye">
+                        <label for="hero">Falcon</label>
+                        <input type="radio" name="hero" value="Falcon">
+                        <label for="hero">Scarlet Witch</label>
+                        <input type="radio" name="hero" value="Scarlet Witch">
+                        <label for="hero">Winter Soldier</label>
+                        <input type="radio" name="hero" value="Winter Soldier"> 
+                        <label for="hero">Ant-Man</label>
+                        <input type="radio" name="hero" value="Ant-Man"> 
+
+                        <h3>Top 3 favorites</h3>
+                        <label class="container">Captain America
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Hawkeye
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Falcon
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Scarlet Witch
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Winter Soldier
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Ant-Man
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <h3>Why?</h3>
+                        <textarea name="message" rows="10" cols="40"></textarea>
+                        <br>
+                        <br>
+                        <input type="submit" value="Send"> 
+                </fieldset>
+            </form>
             <p class="bottommargin"></p>
         </div>
-        <div class="rightcolumn capcolor">
+        <div role="profile" class="rightcolumn capcolor">
             <h1 class="center whitecolor">Captain America's Team</h1>
             <img class="profilepic" alt="Captain America Team" src="https://cdn3.movieweb.com/i/article/CSCKVZFBJtqYGGyGSoyv5GQS2xVwMA/798:50/Captain-America-Civil-War-Iron-Man-Teams.jpg">
             <h4 class="whitecolor">Members:</h4>

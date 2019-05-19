@@ -8,47 +8,51 @@
         <title>IronTeam</title>
     </head>
     <body>
-        <nav class="ironnavbackground">
-            <ul>
-                <li>
-                    <a class="ironnavbuttons" href="Ironteam.HTML">Team</a>
-                </li>
-                <li class="dropdown">
-                    <a class="ironnavbuttons" href="#">List</a>
-                    <div class="dropdown-content">
-                        <ul>
-                            <li>
-                                <a class="ironnavbuttons" href="IronMan.HTML">Iron Man</a>
-                            </li>
-                            <li>
-                                <a class="ironnavbuttons" href="Spider-Man.HTML">Spider-Man</a>
-                            </li>
-                            <li>
-                                <a class="ironnavbuttons" href="Vision.HTML">Vision</a>
-                            </li>
-                            <li>
-                                <a class="ironnavbuttons smallerfont" href="BlackWidow.HTML">Black Widow</a>
-                            </li>
-                            <li>
-                                <a class="ironnavbuttons smallerfont" href="WarMachine.HTML">War Machine</a>
-                            </li>
-                            <li>
-                                <a class="ironnavbuttons smallerfont" href="BlackPanther.HTML">Black Panther</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="switchteam">
-                    <a class="ironnavbuttons" href="Capteam.HTML">Switch team</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="leftcolumn marginleft">
+        <header>
+            <nav class="ironnavbackground">
+                <ul>
+                    <li>
+                        <a class="ironnavbuttons" href="Ironteam.HTML">Team</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="ironnavbuttons" href="#">List</a>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li>
+                                    <a class="ironnavbuttons" href="IronMan.HTML">Iron Man</a>
+                                </li>
+                                <li>
+                                    <a class="ironnavbuttons" href="Spider-Man.HTML">Spider-Man</a>
+                                </li>
+                                <li>
+                                    <a class="ironnavbuttons" href="Vision.HTML">Vision</a>
+                                </li>
+                                <li>
+                                    <a class="ironnavbuttons smallerfont" href="BlackWidow.HTML">Black Widow</a>
+                                </li>
+                                <li>
+                                    <a class="ironnavbuttons smallerfont" href="WarMachine.HTML">War Machine</a>
+                                </li>
+                                <li>
+                                    <a class="ironnavbuttons smallerfont" href="BlackPanther.HTML">Black Panther</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="switchteam">
+                        <a class="ironnavbuttons" href="Capteam.HTML">Switch team</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div role="main" class="leftcolumn marginleft">
             <h1>Iron Man's Team</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JF7nHPTWqIQ?start=152" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptatem vitae eveniet quasi reiciendis quod natus laudantium modi iure laborum vel, voluptatibus dignissimos ipsam aut laboriosam rem facere magni quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum vero ipsa illo, ut delectus nemo molestiae sapiente dolores amet ullam magni qui quod odit similique molestias deserunt. Libero, est?</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta laboriosam quae deserunt vel exercitationem. Asperiores velit nulla ex laborum exercitationem odio? Alias hic sint laudantium neque cum explicabo tempore dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deserunt? Quod voluptates suscipit repellat ipsa dolores odit accusamus similique saepe inventore cumque recusandae optio, quasi quisquam? Laborum unde quod expedita.</p>
             <br>
-            <img class="textpic" alt="Iron Man Team running" src="Iron-team.jpg">
+            <img class="textpic" alt="Iron Man's Team running" src="Iron-team.jpg">
             <table>
                 <thead>
                     <tr>
@@ -90,7 +94,7 @@
                         <td>Tom Holland</td>
                     </tr>
                     <tr>
-                        <td><a href="#">Black Panther</a></td>
+                        <td><a href="BlackPanther.HTML">Black Panther</a></td>
                         <td>T'Challa</td>
                         <td>Captain America: Civil War</td>
                         <td>Chadwick Boseman</td>
@@ -99,7 +103,7 @@
             </table>
             <br>
             <h3 class="marginleft">Strongest On the Team In Order</h3>
-            <ol class="bottommargin">
+            <ol>
                 <li>Iron Man</li>
                 <li>Vision</li>
                 <li>Black Panther</li>
@@ -107,9 +111,72 @@
                 <li>War Machine</li>
                 <li>Black Widow</li>
             </ol>
+            <form class="bottommargin" id="Ironform" autocomplete="on">
+                <fieldset>
+                    <legend>
+                        Favorite Superheroes
+                    </legend>
+                        <h3>First Name</h3>
+                        <input type="text" name="fName" maxlength="24" pattern="[A-Za-z]{0,}" autofocus required>
+                        <h3>Last Name</h3>
+                        <input type="text" name="lName" maxlength="24" pattern="[A-Za-z]{0,}">
+                        <h3>Favorite on the team</h3>
+                        <label for="hero">Iron Man</label>
+                        <input type="radio" name="hero" value="Iron Man">
+                        <label for="hero">Vision</label>
+                        <input type="radio" name="hero" value="Vision">
+                        <label for="hero">Black Widow</label>
+                        <input type="radio" name="hero" value="Black Widow">
+                        <label for="hero">War Machine</label>
+                        <input type="radio" name="hero" value="War Machine">
+                        <label for="hero">Spider-Man</label>
+                        <input type="radio" name="hero" value="Spider-Man"> 
+                        <label for="hero">Black Panther</label>
+                        <input type="radio" name="hero" value="Black Panther"> 
+
+                        <h3>Top 3 favorites</h3>
+                        <label class="container">Iron Man
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Vision
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Black Widow
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">War Machine
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Spider-Man
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Black Panther
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <h3>Why?</h3>
+                        <textarea name="message" rows="10" cols="40"></textarea>
+                        <br>
+                        <br>
+                        <input type="submit" value="Send"> 
+                </fieldset>
+            </form>
+            <br>
+            <p class="bottommargin"></p>
+            <p class="bottommargin"></p>
+            <br>
+            <br>
+            <br>
+            <br>
             <br>
         </div>
-        <div class="rightcolumn ironcolor">
+        <div role="profile" class="rightcolumn ironcolor">
             <h1 class="center">Iron Man's Team</h1>
             <img class="profilepic" alt="Iron Man Team" src="https://hiddenremote.com/wp-content/blogs.dir/280/files/2015/08/1438962876263.jpeg">
             <h4>Members:</h4>
